@@ -44,17 +44,28 @@ Text: {extracted_text}
 
 Evaluation uses metrics like Character Error Rate (CER) and Word Accuracy (WA):
 
-\[
-CER = \frac{S + D + I}{N}
-\]
+CER is calculated as:
 
-Where \(S\) = substitutions, \(D\) = deletions, \(I\) = insertions, \(N\) = total characters. Target: CER < 2%.
+$$
+CER = \frac{S + D + I}{N}
+$$
+
+Where:
+- $S$ = substitutions  
+- $D$ = deletions  
+- $I$ = insertions  
+- $N$ = total characters  
+
+Target: CER < 2%.
+
+---
 
 WA is calculated as:
 
-\[
-WA = \frac{Correct\ Words}{Total\ Words} \times 100\%
-\]
+$$
+WA = \frac{\text{Correct Words}}{\text{Total Words}} \times 100\%
+$$
+
 
 Aimed at 95%+ on historical texts.
 
